@@ -40,7 +40,7 @@
         "url": "https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "favicon": false,
+    "favicon": "",
     "": "on",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -51,10 +51,9 @@
     "screenshot": "screenshot.png",
     "dppsSwitcher": true,
     "imageResize": true,
-    "mbrsiteDomain": "duzlgqbpoy",
-    "cookiesAlert": false,
-    "gdpr": false,
-    "witsec-white-label": true
+    "publishType": "local",
+    "mbrsite": "mbrsite://%7B%22id%22%3A325905%2C%22domain%22%3A%22duzlgqbpoy.mobirisesite.com%22%7D",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
