@@ -50,7 +50,10 @@
     "versionPublish": "5.6.11",
     "screenshot": "screenshot.png",
     "dppsSwitcher": true,
-    "imageResize": true
+    "imageResize": true,
+    "publishType": "local",
+    "mbrsite": "mbrsite://%7B%22id%22%3A325905%2C%22domain%22%3A%22duzlgqbpoy.mobirisesite.com%22%7D",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
@@ -1500,7 +1503,7 @@
                 "title": "",
                 "customStyle1": "display-7",
                 "caption": "Type caption here",
-                "active": false
+                "active": true
               },
               {
                 "tags": "Animated",
@@ -1652,71 +1655,6 @@
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
                 "image": "@PROJECT_PATH@/assets/images/55788326-10219211936234612-2405656722027839488-n-960x720.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/55788326-10219211936234612-2405656722027839488-n-960x720-800x600.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/20230603-192214-2000x3551.jpeg",
-                "thumb": "@PROJECT_PATH@/assets/images/20230603-192214-2000x3551-800x807.jpeg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": true
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/20230616-185118-2000x1126.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/20230616-185118-2000x1126-800x450.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/20210806-171350-2000x1126.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/20210806-171350-2000x1126-800x450.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/20210806-203857-2000x1126.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/20210806-203857-2000x1126-800x450.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Type caption here",
-                "active": false
-              },
-              {
-                "tags": "Animated",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/20211030-204818-2000x1126.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/20211030-204818-2000x1126-800x450.jpg",
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
