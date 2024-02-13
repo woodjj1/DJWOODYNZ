@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "DJ WOODY NZ",
-    "currentPage": "contact.html",
+    "currentPage": "start.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -88,6 +88,8 @@
     "witsec-search": true,
     "witsec-mailform": true,
     "witsec-mailform-recaptcha-hidebadge": false,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@",
     "witsec-search-excluded-sections": "",
     "witsec-search-excluded-pages": "404.html"
   },
@@ -2613,6 +2615,239 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "#simp button,#simp input,#simp img": {
+              "border": "0"
+            },
+            "#simp": {
+              "max-width": "600px",
+              "font-size": "14px",
+              "font-family": "\"Segoe UI\", Tahoma, sans-serif",
+              "text-align": "initial",
+              "line-height": "initial",
+              "background": "#17212b",
+              "color": "#ddd",
+              "margin": "0 auto",
+              "border-radius": "6px",
+              "overflow": "hidden"
+            },
+            "#simp .simp-album": {
+              "padding": "20px 25px 5px"
+            },
+            "#simp .simp-album .simp-cover": {
+              "margin-right": "20px"
+            },
+            "#simp .simp-album .simp-cover img": {
+              "max-width": "80px",
+              "width": "100%",
+              "margin": "0",
+              "padding": "0",
+              "display": "block"
+            },
+            "#simp .simp-album .simp-title": {
+              "font-size": "120%",
+              "font-weight": "bold"
+            },
+            "#simp .simp-album .simp-artist": {
+              "font-size": "90%",
+              "color": "#6c7883"
+            },
+            "#simp .simp-controls": {
+              "padding": "15px"
+            },
+            "#simp .simp-controls button": {
+              "font-size": "130%",
+              "width": "32px",
+              "height": "32px",
+              "background": "none",
+              "color": "#ddd",
+              "padding": "7px",
+              "cursor": "pointer",
+              "border": "0",
+              "border-radius": "3px"
+            },
+            "#simp .simp-controls button[disabled]": {
+              "color": "#636469",
+              "cursor": "initial"
+            },
+            "#simp .simp-controls button:not([disabled]):hover": {
+              "background": "#4082bc",
+              "color": "#fff"
+            },
+            "#simp .simp-controls .simp-prev,#simp .simp-controls .simp-next": {
+              "font-size": "100%"
+            },
+            "#simp .simp-controls .simp-tracker,#simp .simp-controls .simp-volume": {
+              "flex": "1",
+              "margin-left": "10px",
+              "position": "relative"
+            },
+            "#simp .simp-controls .simp-buffer": {
+              "position": "absolute",
+              "top": "50%",
+              "right": "0",
+              "left": "0",
+              "height": "5px",
+              "margin-top": "-2.5px",
+              "border-radius": "100px"
+            },
+            "#simp .simp-controls .simp-loading .simp-buffer": {
+              "-webkit-animation": "audio-progress 1s linear infinite",
+              "animation": "audio-progress 1s linear infinite",
+              "background-image": "linear-gradient(-45deg, #000000 25%, transparent 25%, transparent 50%, #000000 50%, #000000 75%, transparent 75%, transparent)",
+              "background-repeat": "repeat-x",
+              "background-size": "25px 25px",
+              "color": "transparent"
+            },
+            "#simp .simp-controls .simp-time,#simp .simp-controls .simp-others": {
+              "margin-left": "10px"
+            },
+            "#simp .simp-controls .simp-volume": {
+              "max-width": "110px"
+            },
+            "#simp .simp-controls .simp-volume .simp-mute": {
+              "margin-right": "5px"
+            },
+            "#simp .simp-controls .simp-others .simp-active": {
+              "background": "#242f3d"
+            },
+            "#simp .simp-controls .simp-others .simp-shide button": {
+              "font-size": "100%",
+              "padding": "0",
+              "width": "24px",
+              "height": "14px",
+              "display": "block"
+            },
+            "#simp .simp-controls input[type=range]": {
+              "-webkit-appearance": "none",
+              "background": "transparent",
+              "height": "19px",
+              "margin": "0",
+              "width": "100%",
+              "display": "block",
+              "position": "relative",
+              "z-index": "2"
+            },
+            "#simp .simp-controls input[type=range]::-webkit-slider-runnable-track": {
+              "background": "rgba(183, 197, 205, 0.66)",
+              "height": "5px",
+              "border-radius": "2.5px",
+              "transition": "box-shadow 0.3s ease",
+              "position": "relative"
+            },
+            "#simp .simp-controls input[type=range]::-moz-range-track": {
+              "background": "rgba(183, 197, 205, 0.66)",
+              "height": "5px",
+              "border-radius": "2.5px",
+              "transition": "box-shadow 0.3s ease",
+              "position": "relative"
+            },
+            "#simp .simp-controls .simp-load .simp-progress::-webkit-slider-runnable-track": {
+              "background": "#2f3841"
+            },
+            "#simp .simp-controls .simp-load .simp-progress::-moz-range-track": {
+              "background": "#2f3841"
+            },
+            "#simp .simp-controls .simp-loading .simp-progress::-webkit-slider-runnable-track": {
+              "background": "rgba(255, 255, 255, 0.25)"
+            },
+            "#simp .simp-controls .simp-loading .simp-progress::-moz-range-track": {
+              "background": "rgba(255, 255, 255, 0.25)"
+            },
+            "#simp .simp-controls input[type=range]::-webkit-slider-thumb": {
+              "-webkit-appearance": "none",
+              "background": "#fff",
+              "height": "13px",
+              "width": "13px",
+              "margin-top": "-4px",
+              "cursor": "pointer",
+              "border-radius": "50%",
+              "box-shadow": "0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(47, 52, 61, 0.2)"
+            },
+            "#simp .simp-controls input[type=range]::-moz-range-thumb": {
+              "-webkit-appearance": "none",
+              "background": "#fff",
+              "height": "13px",
+              "width": "13px",
+              "cursor": "pointer",
+              "border-radius": "50%",
+              "box-shadow": "0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(47, 52, 61, 0.2)"
+            },
+            "#simp .simp-footer": {
+              "padding": "10px 10px 12px",
+              "font-size": "90%",
+              "text-align": "center",
+              "opacity": ".7"
+            },
+            "#simp .simp-display": {
+              "overflow": "hidden",
+              "max-height": "650px",
+              "transition": "max-height 0.5s ease-in-out"
+            },
+            "#simp .simp-hide": {
+              "max-height": "0"
+            },
+            "#simp ul": {
+              "margin": "5px 0 0",
+              "padding": "0",
+              "list-style": "none",
+              "max-height": "245px",
+              "overflow-y": "auto",
+              "overflow-x": "hidden",
+              "scrollbar-color": "#73797f #2f3841"
+            },
+            "#simp ul li": {
+              "white-space": "nowrap",
+              "overflow": "hidden",
+              "text-overflow": "ellipsis",
+              "display": "block",
+              "margin": "0",
+              "padding": "8px 20px",
+              "cursor": "pointer"
+            },
+            "#simp ul li:last-child": {
+              "padding-bottom": "13px"
+            },
+            "#simp ul li:nth-child(odd)": {
+              "background": "#0e1621"
+            },
+            "#simp ul li:hover": {
+              "background": "#242f3d"
+            },
+            "#simp ul li.simp-active": {
+              "background": "#4082bc",
+              "color": "#fff"
+            },
+            "#simp ul li .simp-desc": {
+              "font-size": "90%",
+              "opacity": ".5",
+              "margin-left": "5px"
+            },
+            "#simp ul::-webkit-scrollbar-track": {
+              "background-color": "#2f3841"
+            },
+            "#simp ul::-webkit-scrollbar": {
+              "width": "6px",
+              "background-color": "#2f3841"
+            },
+            "#simp ul::-webkit-scrollbar-thumb": {
+              "background-color": "#73797f"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section class=\"mbr-section content1 restaurantm4_content1\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\t\t<hr>\n\t\t<input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" checked=\"\">\n\t\t<input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#f9e2af\" condition=\"showUnderline\">\n\t\t<input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-md-10 col-sm-12 text-section\">\n\t\t\t<style>\n\t\t\t    \n@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');\n\n*,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}\ninput,button{outline:none;}\na,a:hover,a:visited{color:#ddd;text-decoration:none;}\n.flex{display:-webkit-flex;display:flex;}\n.flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}\n.flex-align{-webkit-align-items:center;align-items:center;}\n.w-full{width:100%;}\n\n\n/* progress animation */\n@-webkit-keyframes audio-progress{to{background-position:25px 0;}}\n@keyframes audio-progress{to{background-position:25px 0;}}\n/* mobile */\n@media screen and (max-width:480px) {\n#simp .simp-controls .simp-volume,#simp .simp-controls .simp-others{display:none;}\n#simp .simp-controls .simp-time{margin-right:10px;}\n}\n@media screen and (max-width:370px) {\n#simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;}\n}\n\n\n\n@-webkit-keyframes audio-progress{to{background-position:25px 0;}}\n@keyframes audio-progress{to{background-position:25px 0;}}\n/* mobile */\n@media screen and (max-width:480px) {\n#simp .simp-controls .simp-volume,#simp .simp-controls .simp-others{display:none;}\n#simp .simp-controls .simp-time{margin-right:10px;}\n}\n@media screen and (max-width:370px) {\n#simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;}\n}\n\n\t\t\t</style>\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t<div class=\"simple-audio-player\" id=\"simp\" data-config=\"{&quot;shide_top&quot;:false,&quot;shide_btm&quot;:false,&quot;auto_load&quot;:false}\">\n  <div class=\"simp-playlist\">\n    <ul>\n      <li><span class=\"simp-source\" data-src=\"http://www.archive.org/download/CanonInD_261/CanoninD.mp3\">Canon in D</span><span class=\"simp-desc\">Johann Pachelbel</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://www.script-tutorials.com/demos/363/data/05.mp3\">Artist 5</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://www.dropbox.com/s/6pays95q2a9jrsf/2020.01.02.mp3?dl=1\" data-cover=\"https://i.postimg.cc/sDBycWS8/NMS-2019.jpg\">Nightmare Side</span><span class=\"simp-desc\">Set Stori</span></li>\n      <li class=\"simp-active\"><span class=\"simp-source\" data-src=\"https://www.dropbox.com/s/k011ag91uktonbv/Angklung%20Preman%20Pensiun.mp3?dl=1\">Angklung Preman Pensiun</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://www.dropbox.com/s/prgte33m86n9ce7/Canon%20Rock%20%28JerryC%29%20-%20funtwo.mp3?dl=1\">Canon Rock (JerryC)</span><span class=\"simp-desc\">by Funtwo</span></li>\n      <li><span class=\"simp-source\" data-src=\"http://listento.ardanradio.com:1059/;\">105.9 FM Ardan Radio</span><span class=\"simp-desc\">Streaming Radio</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/78_jailhouse-rock_elvis-presley-jerry-leiber-mike-stoller_gbia0080595b/Jailhouse%20Rock%20-%20Elvis%20Presley%20-%20Jerry%20Leiber-restored.mp3\">Jailhouse Rock</span><span class=\"simp-desc\">Elvis Presley</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/J._Period_and_Michael_Jackson_-_Man_Or_The_Music-2010/17%20Smooth%20Criminal.mp3\">Smooth Criminal</span><span class=\"simp-desc\">Michael Jackson</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/OldPop_256/VillagePeople-Y.m.c.a.mp3\">Y.M.C.A</span><span class=\"simp-desc\">Village People</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/chuckberryjohnnyb.goode/Chuck%20Berry%20-%20Johnny%20B.%20Goode.mp3\">Johnny B. Goode</span><span class=\"simp-desc\">Chuck Berry</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/AnimalsTheHouseOfTheRisingSun_201811/Animals%20-%20The%20House%20Of%20The%20Rising%20Sun.mp3\">House of the Rising Sun</span><span class=\"simp-desc\">The Animals</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/DontStopMeNow_255/Queen-DontStopMeNow.mp3\">Don't Stop Me Now</span><span class=\"simp-desc\">Queen</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/NeverGonnaGiveYouUpOriginal/Never%20Gonna%20Give%20You%20Up%20Original.mp3\">Never Gonna Give You Up</span><span class=\"simp-desc\">Rick Astley</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/gunsnrosessweetchildomine_202003/Guns%20N%27%20Roses%20-%20Sweet%20Child%20%27O%20Mine.mp3\">Sweet Child O' Mine</span><span class=\"simp-desc\">Guns N' Roses</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/01.TheFinalCountdown/01.%20The%20Final%20Countdown.mp3\">The Final Countdown</span><span class=\"simp-desc\">Europe</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/1MyHeartWillGoOnLoveThemeFromTitanic/1%20-%20My%20Heart%20Will%20Go%20On%20%28Love%20Theme%20from%20_Titanic_%29.mp3\">My Heart Will Go On</span><span class=\"simp-desc\">Céline Dion</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/tntvillage_323140/John%20Lennon%20-%20Imagine/01%20Imagine.mp3\">Imagine</span><span class=\"simp-desc\">John Lennon</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/TheBeatles1970HeyJudeAppleRecords6e062.0434807HeyJude/The%20Beatles%20-%201970%20-%20Hey%20Jude%20%28Apple%20Records%3B%20%236e%20062.04348%29_07%20-%20Hey%20Jude.mp3\">Hey Jude</span><span class=\"simp-desc\">The Beatles</span></li>\n      <li><span class=\"simp-source\" data-src=\"https://archive.org/download/TakeMeHomeCountryRoad/JohnDenver-TakeMeHomeCountryRoad.mp3\">Take Me Home, Country Roads</span><span class=\"simp-desc\">John Denver</span></li>\n    </ul>\n  </div>\n</div>    \n\n<script>\n    \n\n// Multiple events to a listener\nfunction addEventListener_multi(element, eventNames, handler) {\n  var events = eventNames.split(' ');\n  events.forEach(e => element.addEventListener(e, handler, false));\n}\n\n// Random numbers in a specific range\nfunction getRandom(min, max) {\n  min = Math.ceil(min);\n  max = Math.floor(max);\n  return Math.floor(Math.random() * (max - min + 1)) + min;\n}\n\n// Position element inside element\nfunction getRelativePos(elm) {\n  var pPos = elm.parentNode.getBoundingClientRect(); // parent pos\n  var cPos = elm.getBoundingClientRect(); // target pos\n  var pos = {};\n\n  pos.top    = cPos.top    - pPos.top + elm.parentNode.scrollTop,\n  pos.right  = cPos.right  - pPos.right,\n  pos.bottom = cPos.bottom - pPos.bottom,\n  pos.left   = cPos.left   - pPos.left;\n\n  return pos;\n}\n\nfunction formatTime(val) {\n  var h = 0, m = 0, s;\n  val = parseInt(val, 10);\n  if (val > 60 * 60) {\n   h = parseInt(val / (60 * 60), 10);\n   val -= h * 60 * 60;\n  }\n  if (val > 60) {\n   m = parseInt(val / 60, 10);\n   val -= m * 60;\n  }\n  s = val;\n  val = (h > 0)? h + ':' : '';\n  val += (m > 0)? ((m < 10 && h > 0)? '0' : '') + m + ':' : '0:';\n  val += ((s < 10)? '0' : '') + s;\n  return val;\n}\n\nfunction simp_initTime() {\n  simp_controls.querySelector('.start-time').innerHTML = formatTime(simp_audio.currentTime); //calculate current value time\n  if (!simp_isStream) {\n    simp_controls.querySelector('.end-time').innerHTML = formatTime(simp_audio.duration); //calculate total value time\n    simp_progress.value = simp_audio.currentTime / simp_audio.duration * 100; //progress bar\n  }\n  \n  // ended of the audio\n  if (simp_audio.currentTime == simp_audio.duration) {\n    simp_controls.querySelector('.simp-plause').classList.remove('fa-pause');\n    simp_controls.querySelector('.simp-plause').classList.add('fa-play');\n    simp_audio.removeEventListener('timeupdate', simp_initTime);\n    \n    if (simp_isNext) { //auto load next audio\n      var elem;\n      simp_a_index++;\n      if (simp_a_index == simp_a_url.length) { //repeat all audio\n        simp_a_index = 0;\n        elem = simp_a_url[0];\n      } else {\n        elem = simp_a_url[simp_a_index];  \n      }\n      simp_changeAudio(elem);\n      simp_setAlbum(simp_a_index);\n    } else {\n      simp_isPlaying = false;\n    }\n  }\n}\n\nfunction simp_initAudio() {\n  // if readyState more than 2, audio file has loaded\n\tsimp_isLoaded = simp_audio.readyState == 4 ? true : false;\n  simp_isStream = simp_audio.duration == 'Infinity' ? true : false;\n  simp_controls.querySelector('.simp-plause').disabled = false;\n  simp_progress.disabled = simp_isStream ? true : false;\n  if (!simp_isStream) {\n    simp_progress.parentNode.classList.remove('simp-load','simp-loading');\n    simp_controls.querySelector('.end-time').innerHTML = formatTime(simp_audio.duration);\n  }\n  simp_audio.addEventListener('timeupdate', simp_initTime); //tracking load progress\n  if (simp_isLoaded && simp_isPlaying) simp_audio.play();\n  \n  // progress bar click event\n  addEventListener_multi(simp_progress, 'touchstart mousedown', function(e) {\n    if (simp_isStream) {\n      e.stopPropagation();\n      return false;\n    }\n    if (simp_audio.readyState == 4) {\n      simp_audio.removeEventListener('timeupdate', simp_initTime);\n      simp_audio.pause();\n    }\n  });\n  \n  addEventListener_multi(simp_progress, 'touchend mouseup', function(e) {\n    if (simp_isStream) {\n      e.stopPropagation();\n      return false;\n    }\n    if (simp_audio.readyState == 4) {\n      simp_audio.currentTime = simp_progress.value * simp_audio.duration / 100;\n      simp_audio.addEventListener('timeupdate', simp_initTime);\n      if (simp_isPlaying) simp_audio.play();\n    }\n  });\n}\n\nfunction simp_loadAudio(elem) {\n  simp_progress.parentNode.classList.add('simp-loading');\n  simp_controls.querySelector('.simp-plause').disabled = true;\n  simp_audio.querySelector('source').src = elem.dataset.src;\n  simp_audio.load();\n  \n  simp_audio.volume = parseFloat(simp_v_num / 100); //based on valume input value\n  simp_audio.addEventListener('canplaythrough', simp_initAudio); //play audio without stop for buffering\n  \n  // if audio fails to load, only IE/Edge 9.0 or above\n  simp_audio.addEventListener('error', function() {\n    alert('Please reload the page.');\n  });\n}\n\nfunction simp_setAlbum(index) {\n  simp_cover.innerHTML = simp_a_url[index].dataset.cover ? '<div style=\"background:url(' + simp_a_url[index].dataset.cover + ') no-repeat;background-size:cover;width:80px;height:80px;\"></div>' : '<i class=\"fa fa-music fa-5x\"></i>';\n  simp_title.innerHTML = simp_source[index].querySelector('.simp-source').innerHTML;\n  simp_artist.innerHTML = simp_source[index].querySelector('.simp-desc') ? simp_source[index].querySelector('.simp-desc').innerHTML : '';\n}\n\nfunction simp_changeAudio(elem) {\n\tsimp_isLoaded = false;\n  simp_controls.querySelector('.simp-prev').disabled = simp_a_index == 0 ? true : false;\n  simp_controls.querySelector('.simp-plause').disabled = simp_auto_load ? true : false;\n  simp_controls.querySelector('.simp-next').disabled = simp_a_index == simp_a_url.length-1 ? true : false;\n  simp_progress.parentNode.classList.add('simp-load');\n  simp_progress.disabled = true;\n  simp_progress.value = 0;\n  simp_controls.querySelector('.start-time').innerHTML = '00:00';\n  simp_controls.querySelector('.end-time').innerHTML = '00:00';\n  elem = simp_isRandom && simp_isNext ? simp_a_url[getRandom(0, simp_a_url.length-1)] : elem;\n  \n  // playlist, audio is running\n  for (var i = 0; i < simp_a_url.length; i++) {\n    simp_a_url[i].parentNode.classList.remove('simp-active');\n    if (simp_a_url[i] == elem) {\n      simp_a_index = i;\n      simp_a_url[i].parentNode.classList.add('simp-active');\n    }\n  }\n  \n  // scrolling to element inside element\n  var simp_active = getRelativePos(simp_source[simp_a_index]);\n  simp_source[simp_a_index].parentNode.scrollTop = simp_active.top;\n  \n  if (simp_auto_load || simp_isPlaying) simp_loadAudio(elem);\n  \n  if (simp_isPlaying) {\n    simp_controls.querySelector('.simp-plause').classList.remove('fa-play');\n    simp_controls.querySelector('.simp-plause').classList.add('fa-pause');\n  }\n}\n\nfunction simp_startScript() {\n  ap_simp = document.querySelector('#simp');\n  simp_audio = ap_simp.querySelector('#audio');\n  simp_album = ap_simp.querySelector('.simp-album');\n  simp_cover = simp_album.querySelector('.simp-cover');\n  simp_title = simp_album.querySelector('.simp-title');\n  simp_artist = simp_album.querySelector('.simp-artist');\n  simp_controls = ap_simp.querySelector('.simp-controls');\n  simp_progress = simp_controls.querySelector('.simp-progress');\n  simp_volume = simp_controls.querySelector('.simp-volume');\n  simp_v_slider = simp_volume.querySelector('.simp-v-slider');\n  simp_v_num = simp_v_slider.value; //default volume\n  simp_others = simp_controls.querySelector('.simp-others');\n  simp_auto_load = simp_config.auto_load; //auto load audio file\n  \n  if (simp_config.shide_top) simp_album.parentNode.classList.toggle('simp-hide');\n  if (simp_config.shide_btm) {\n    simp_playlist.classList.add('simp-display');\n    simp_playlist.classList.toggle('simp-hide');\n  }\n  \n  if (simp_a_url.length <= 1) {\n    simp_controls.querySelector('.simp-prev').style.display = 'none';\n    simp_controls.querySelector('.simp-next').style.display = 'none';\n    simp_others.querySelector('.simp-plext').style.display = 'none';\n    simp_others.querySelector('.simp-random').style.display = 'none';\n  }\n\n  // Playlist listeners\n  simp_source.forEach(function(item, index) {\n    if (item.classList.contains('simp-active')) simp_a_index = index; //playlist contains '.simp-active'\n    item.addEventListener('click', function() {\n      simp_audio.removeEventListener('timeupdate', simp_initTime);\n      simp_a_index = index;\n      simp_changeAudio(this.querySelector('.simp-source'));\n      simp_setAlbum(simp_a_index);\n    });\n  });\n  \n  // FIRST AUDIO LOAD =======\n  simp_changeAudio(simp_a_url[simp_a_index]);\n  simp_setAlbum(simp_a_index);\n  // FIRST AUDIO LOAD =======\n  \n  // Controls listeners\n  simp_controls.querySelector('.simp-plauseward').addEventListener('click', function(e) {\n    var eles = e.target.classList;\n    if (eles.contains('simp-plause')) {\n      if (simp_audio.paused) {\n        if (!simp_isLoaded) simp_loadAudio(simp_a_url[simp_a_index]);\n        simp_audio.play();\n        simp_isPlaying = true;\n        eles.remove('fa-play');\n        eles.add('fa-pause');\n      } else {\n        simp_audio.pause();\n        simp_isPlaying = false;\n        eles.remove('fa-pause');\n        eles.add('fa-play');\n      }\n    } else {\n      if (eles.contains('simp-prev') && simp_a_index != 0) {\n        simp_a_index = simp_a_index-1;\n        e.target.disabled = simp_a_index == 0 ? true : false;\n      } else if (eles.contains('simp-next') && simp_a_index != simp_a_url.length-1) {\n        simp_a_index = simp_a_index+1;\n        e.target.disabled = simp_a_index == simp_a_url.length-1 ? true : false;\n      }\n      simp_audio.removeEventListener('timeupdate', simp_initTime);\n      simp_changeAudio(simp_a_url[simp_a_index]);\n      simp_setAlbum(simp_a_index);\n    }\n  });\n  \n  // Audio volume\n  simp_volume.addEventListener('click', function(e) {\n    var eles = e.target.classList;\n    if (eles.contains('simp-mute')) {\n      if (eles.contains('fa-volume-up')) {\n        eles.remove('fa-volume-up');\n        eles.add('fa-volume-off');\n        simp_v_slider.value = 0;\n      } else {\n        eles.remove('fa-volume-off');\n        eles.add('fa-volume-up');\n        simp_v_slider.value = simp_v_num;\n      }\n    } else {\n      simp_v_num = simp_v_slider.value;\n      if (simp_v_num != 0) {\n        simp_controls.querySelector('.simp-mute').classList.remove('fa-volume-off');\n        simp_controls.querySelector('.simp-mute').classList.add('fa-volume-up');\n      }\n    }\n    simp_audio.volume = parseFloat(simp_v_slider.value / 100);\n  });\n  \n  // Others\n  simp_others.addEventListener('click', function(e) {\n    var eles = e.target.classList;\n    if (eles.contains('simp-plext')) {\n      simp_isNext = simp_isNext && !simp_isRandom ? false : true;\n      if (!simp_isRandom) simp_isRanext = simp_isRanext ? false : true;\n      eles.contains('simp-active') && !simp_isRandom ? eles.remove('simp-active') : eles.add('simp-active');\n    } else if (eles.contains('simp-random')) {\n      simp_isRandom = simp_isRandom ? false : true;\n      if (simp_isNext && !simp_isRanext) {\n        simp_isNext = false;\n        simp_others.querySelector('.simp-plext').classList.remove('simp-active');\n      } else {\n        simp_isNext = true;\n        simp_others.querySelector('.simp-plext').classList.add('simp-active');\n      }\n      eles.contains('simp-active') ? eles.remove('simp-active') : eles.add('simp-active');\n    } else if (eles.contains('simp-shide-top')) {\n      simp_album.parentNode.classList.toggle('simp-hide');\n    } else if (eles.contains('simp-shide-bottom')) {\n      simp_playlist.classList.add('simp-display');\n      simp_playlist.classList.toggle('simp-hide');\n    }\n  });\n}\n\n// Start simple player\nif (document.querySelector('#simp')) {\n  var simp_auto_load, simp_audio, simp_album, simp_cover, simp_title, simp_artist, simp_controls, simp_progress, simp_volume, simp_v_slider, simp_v_num, simp_others;\n  var ap_simp = document.querySelector('#simp');\n  var simp_playlist = ap_simp.querySelector('.simp-playlist');\n  var simp_source = simp_playlist.querySelectorAll('li');\n  var simp_a_url = simp_playlist.querySelectorAll('[data-src]');\n  var simp_a_index = 0;\n  var simp_isPlaying = false;\n  var simp_isNext = false; //auto play\n  var simp_isRandom = false; //play random\n  var simp_isRanext = false; //check if before random starts, simp_isNext value is true\n  var simp_isStream = false; //radio streaming\n  var simp_isLoaded = false; //audio file has loaded\n  var simp_config = ap_simp.dataset.config ? JSON.parse(ap_simp.dataset.config) : {\n    shide_top: false, //show/hide album\n    shide_btm: false, //show/hide playlist\n    auto_load: false //auto load audio file\n  };\n  \n  var simp_elem = '';\n  simp_elem += '<audio id=\"audio\" preload><source src=\"\" type=\"audio/mpeg\"></audio>';\n  simp_elem += '<div class=\"simp-display\"><div class=\"simp-album w-full flex-wrap\"><div class=\"simp-cover\"><i class=\"fa fa-music fa-5x\"></i></div><div class=\"simp-info\"><div class=\"simp-title\">Title</div><div class=\"simp-artist\">Artist</div></div></div></div>';\n  simp_elem += '<div class=\"simp-controls flex-wrap flex-align\">';\n  simp_elem += '<div class=\"simp-plauseward flex flex-align\"><button type=\"button\" class=\"simp-prev fa fa-backward\" disabled></button><button type=\"button\" class=\"simp-plause fa fa-play\" disabled></button><button type=\"button\" class=\"simp-next fa fa-forward\" disabled></button></div>';\n  simp_elem += '<div class=\"simp-tracker simp-load\"><input class=\"simp-progress\" type=\"range\" min=\"0\" max=\"100\" value=\"0\" disabled/><div class=\"simp-buffer\"></div></div>';\n  simp_elem += '<div class=\"simp-time flex flex-align\"><span class=\"start-time\">00:00</span><span class=\"simp-slash\"> / </span><span class=\"end-time\">00:00</span></div>';\n  simp_elem += '<div class=\"simp-volume flex flex-align\"><button type=\"button\" class=\"simp-mute fa fa-volume-up\"></button><input class=\"simp-v-slider\" type=\"range\" min=\"0\" max=\"100\" value=\"100\"/></div>';\n  simp_elem += '<div class=\"simp-others flex flex-align\"><button type=\"button\" class=\"simp-plext fa fa-play-circle\" title=\"Auto Play\"></button><button type=\"button\" class=\"simp-random fa fa-random\" title=\"Random\"></button><div class=\"simp-shide\"><button type=\"button\" class=\"simp-shide-top fa fa-caret-up\" title=\"Show/Hide Album\"></button><button type=\"button\" class=\"simp-shide-bottom fa fa-caret-down\" title=\"Show/Hide Playlist\"></button></div></div>';\n  simp_elem += '</div>'; //simp-controls\n  \n  var simp_player = document.createElement('div');\n  simp_player.classList.add('simp-player');\n  simp_player.innerHTML = simp_elem;\n  ap_simp.insertBefore(simp_player, simp_playlist);\n  simp_startScript();\n}\n</script></div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "oZsrdXL7VX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "design-block-oZsrdXL7VX"
         }
       ]
     },
@@ -3160,11 +3395,11 @@
           "_sourceTheme": "mobirise4",
           "_customHTML": "<section class=\"mbr-section form4\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"Dunedin\" value=\"Dunedin\">\n        <input type=\"range\" title=\"Height Map\" name=\"heightMap\" min=\"15\" max=\"50\" step=\"1\" value=\"25\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"checkbox\" title=\"Show Subheading\" name=\"showSubheading\" checked>\n        <input type=\"checkbox\" title=\"Show Contacts\" name=\"showContacts\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Form\" name=\"showForm\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <div class=\"google-map\" mbr-map=\"googleMap\">\n                </div>\n            </div>\n            <div class=\"col-md-6\">\n                <h2 mbr-if=\"showTitle\" class=\"pb-3 align-left mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    Drop a Line\n                </h2>\n                <div>\n                    <div class=\"icon-block pb-3 align-left\">\n                        <span mbr-if=\"showIcons\" class=\"icon-block__icon\">\n                            <span mbr-icon class=\"mbri-letter mbr-iconfont\"></span>\n                        </span>\n                        <h4 mbr-if=\"showSubheading\" class=\"icon-block__title align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-block,.icon-block .icon-block__title\">\n                            Don't hesitate to contact us\n                        </h4>\n                    </div>\n                    <div class=\"icon-contacts pb-3\" mbr-if=\"showContacts\">\n                        <h5 mbr-if=\"showSubtitle\" class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                            Ready for offers and cooperation\n                        </h5>\n                        <p mbr-if=\"showText\" class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            Phone: +1 (0) 000 0000 001 <br>\n                            Email: youremail@mail.com\n                        </p>\n                    </div>\n                </div>\n                <div mbr-form mbr-if=\"showForm\">\n                    <!---Formbuilder Form--->\n                    <form action=\"djwoody@gmail.com\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\" data-verified=\"djwoody@gmail.com\">\n                        <div class=\"row\">\n                            <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                            <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                            </div>\n                        </div>\n                        <div class=\"dragArea row\">\n                            <div class=\"col-md-6  form-group\" data-for=\"name\">\n                                <input type=\"text\" name=\"name\" placeholder=\"Your Name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control input\">\n                            </div>\n                            <div class=\"col-md-6  form-group\" data-for=\"phone\">\n                                <input type=\"text\" name=\"phone\" placeholder=\"Phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control input\">\n                            </div>\n                            <div data-for=\"email\" class=\"col-md-12  form-group\">\n                                <input type=\"text\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" class=\"form-control input\" required=\"required\">\n                            </div>\n                            <div data-for=\"message\" class=\"col-md-12  form-group\">\n                                <textarea name=\"message\" placeholder=\"Message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control input\"></textarea>\n                            </div>\n                            <div class=\"col-md-12 input-group-btn  mt-2 align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                                <a type=\"submit\" class=\"btn btn-primary btn-form\">SEND MESSAGE</a>\n                            </div>\n                        </div>\n                    </form><!---Formbuilder Form--->\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "u47AeqOhqZ",
-          "_anchor": "form4-16",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "form4-16"
         },
         {
           "alias": false,
