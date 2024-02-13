@@ -2318,8 +2318,7 @@ section.lazy-placeholder:after {
 .cid-rQEaVCRFLl {
   padding-top: 120px;
   padding-bottom: 90px;
-  background-color: #000000;
-  background: linear-gradient(45deg, #000000, #5b686b);
+  background-color: #232323;
 }
 .cid-rQEaVCRFLl .media-container-row {
   flex-direction: row-reverse;
@@ -2345,7 +2344,7 @@ section.lazy-placeholder:after {
 .cid-rQE1kApVvM {
   padding-top: 90px;
   padding-bottom: 120px;
-  background: linear-gradient(0deg, #5b686b, #232323);
+  background: linear-gradient(0deg, #000000, #232323);
 }
 .cid-rQE1kApVvM .mbr-iconfont-social {
   font-size: 32px;
@@ -2853,7 +2852,7 @@ section.lazy-placeholder:after {
 .cid-rQE1rw03RF {
   padding-top: 120px;
   padding-bottom: 120px;
-  background: linear-gradient(0deg, #5b686b, #232323);
+  background: linear-gradient(0deg, #000000, #5b686b);
 }
 .cid-rQE1rw03RF .mbr-iconfont-social {
   font-size: 32px;
