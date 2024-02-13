@@ -2771,7 +2771,7 @@ section.lazy-placeholder:after {
 .cid-u47AeqOhqZ {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #ffffff;
+  background-color: #5b686b;
 }
 .cid-u47AeqOhqZ .mbr-iconfont {
   font-size: 48px;
@@ -2792,7 +2792,7 @@ section.lazy-placeholder:after {
   font-style: italic;
 }
 .cid-u47AeqOhqZ .mbr-text {
-  color: #767676;
+  color: #ffffff;
 }
 .cid-u47AeqOhqZ textarea.form-control {
   min-height: 100px;
@@ -2840,73 +2840,15 @@ section.lazy-placeholder:after {
     padding-left: 30px;
   }
 }
-.cid-rQE4enluM1 .main_wrapper {
-  position: relative;
-  height: 20rem;
-  width: 100%;
-  background-color: #c0c0c0;
+.cid-u47AeqOhqZ .icon-block,
+.cid-u47AeqOhqZ .icon-block .icon-block__title {
+  color: #ffffff;
 }
-.cid-rQE4enluM1 .main_wrapper .b_wrapper {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
+.cid-u47AeqOhqZ H2 {
+  color: #ffffff;
 }
-.cid-rQE4enluM1 .main_wrapper .b_wrapper .block {
-  height: 300px;
-  background-color: #ffffff;
-  pointer-events: fill;
-}
-.cid-rQE4enluM1 .main_wrapper .b_wrapper .block .block_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-.cid-rQE4enluM1 .google-map {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-.cid-rQE4enluM1 .google-map iframe {
-  height: 100%;
-  width: 100%;
-}
-.cid-rQE4enluM1 .google-map [data-state-details] {
-  color: #6b6763;
-  font-family: Montserrat;
-  height: 1.5em;
-  margin-top: -0.75em;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-}
-.cid-rQE4enluM1 .google-map[data-state] {
-  background: #e9e5dc;
-}
-.cid-rQE4enluM1 .google-map[data-state="loading"] [data-state-details] {
-  display: none;
-}
-@media (max-width: 767px) {
-  .cid-rQE4enluM1 .main_wrapper .b_wrapper {
-    display: block;
-    height: unset;
-  }
-  .cid-rQE4enluM1 .google-map {
-    position: relative;
-  }
-  .cid-rQE4enluM1 .container {
-    max-width: 100%;
-    padding: 0;
-  }
+.cid-u47AeqOhqZ H5 {
+  color: #ffffff;
 }
 .cid-rQE1rw03RF {
   padding-top: 120px;
