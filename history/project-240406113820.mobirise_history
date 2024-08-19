@@ -46,8 +46,8 @@
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": "undefined",
-    "uniqCompNum": 44,
-    "versionPublish": "5.6.11",
+    "uniqCompNum": 43,
+    "versionPublish": "5.6.13",
     "screenshot": "screenshot.png",
     "dppsSwitcher": true,
     "imageResize": true,
@@ -88,6 +88,8 @@
     "witsec-search": true,
     "witsec-mailform": true,
     "witsec-mailform-recaptcha-hidebadge": false,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@",
     "witsec-search-excluded-sections": "",
     "witsec-search-excluded-pages": "404.html"
   },
@@ -2102,15 +2104,435 @@
             }
           },
           "_name": "social-buttons2",
-          "_sourceTheme": "mobirise4",
-          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline=\"\" type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input inline=\"\" type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        \n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#149dcc\"> \n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected=\"\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" title=\"color2\" name=\"color2\" condition=\"bg.type=='color'\" value=\"#232323\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Social Media</h2>\n                <div class=\"social-list pl-0 mb-0\">\n                    <a href=\"https://twitter.com/DJWOODYNZ\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                    </a>\n                    <a href=\"https://www.facebook.com/djwoody09nz/\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" mbr-if=\"iconsCount > 1\"></span>\n                    </a>\n                    <a href=\"https://www.instagram.com/djwoodynz/\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-instagram socicon\" mbr-if=\"iconsCount > 2\"></span>\n                    </a>\n                    <a href=\"https://www.youtube.com/user/woodetube\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-youtube socicon\" mbr-if=\"iconsCount > 3\"></span>\n                    </a>\n                    <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 socicon-behance socicon mbr-iconfont mbr-iconfont-social\" mbr-if=\"iconsCount > 4\"></span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "social-buttons2-17",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline=\"\" type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input inline=\"\" type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        \n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#149dcc\"> \n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected=\"\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" title=\"color2\" name=\"color2\" condition=\"bg.type=='color'\" value=\"#232323\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Social Media</h2>\n                <div class=\"social-list pl-0 mb-0\">\n                    <a href=\"https://twitter.com/DJWOODYNZ\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                    </a>\n                    <a href=\"https://www.facebook.com/djwoody09nz/\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" mbr-if=\"iconsCount > 1\"></span>\n                    </a>\n                    <a href=\"https://www.instagram.com/djwoodynz/\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-instagram socicon\" mbr-if=\"iconsCount > 2\"></span>\n                    </a>\n                    <a href=\"https://www.youtube.com/user/woodetube\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-youtube socicon\" mbr-if=\"iconsCount > 3\"></span>\n                    </a>\n                    <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                        <span mbr-icon=\"\" class=\"px-2 socicon-behance socicon mbr-iconfont mbr-iconfont-social\" mbr-if=\"iconsCount > 4\"></span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "social-buttons2-b",
           "_isUserblock": true,
-          "_cid": "ulW4aH1TqH",
+          "_sourceTheme": "mobirise4",
+          "_cid": "rQE02uQKVF",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "h1, p, img": {
+              "margin": "0",
+              "padding": "0",
+              "border": "0",
+              "outline": "0",
+              "font-size": "100%",
+              "vertical-align": "baseline",
+              "background": "transparent",
+              "text-decoration": "none"
+            },
+            "html": {
+              "scroll-behavior": "smooth"
+            },
+            "@media (max-width: 991px)": {
+              "aside": {
+                "display": "none"
+              }
+            },
+            "aside": {
+              "& when (@showPossDots)": {
+                "left": "(@DotsSpacing * 1px)"
+              },
+              "& when (@showPossDots = false)": {
+                "right": "(@DotsSpacing * 1px)"
+              },
+              "z-index": "1000",
+              "position": "fixed",
+              "top": "50%",
+              "transform": "translate(-50%, -50%)"
+            },
+            "aside ul": {
+              "display": "flex",
+              "flex-direction": "column",
+              "align-items": "center",
+              "list-style-type": "none",
+              "margin": "0"
+            },
+            "aside ul li .indicator": {
+              "cursor": "pointer",
+              "margin-top": "1rem",
+              "display": "block",
+              "height": "(@DotsSize * 1px)",
+              "width": "(@DotsSize * 1px)",
+              "border-radius": "(@DotsRadius * 0.5%)",
+              "background-color": "@IndicColor"
+            },
+            "aside ul li .active": {
+              "transform": "scale(@DotsActSize)",
+              "transition": "transform 200ms ease-in-out",
+              "background-color": "@IndicColorAct"
+            },
+            "div.imgtest": {
+              "content": "url(@Test1)",
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "cover",
+              "font-family": "'object-fit: cover;'",
+              "opacity": "@OpacityImage1",
+              "-webkit-filter": "blur(@BlurImage1 * 1px) grayscale(@GrayImage1)",
+              "-moz-filter": "blur(@BlurImage1 * 1px) grayscale(@GrayImage1)",
+              "-o-filter": "blur(@BlurImage1 * 1px) grayscale(@GrayImage1)",
+              "-ms-filter": "blur(@BlurImage1 * 1px) grayscale(@GrayImage1)",
+              "filter": "blur(@BlurImage1 * 1px) grayscale(@GrayImage1)"
+            },
+            "div.imgtest1": {
+              "content": "url(@Test2)",
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "cover",
+              "font-family": "'object-fit: cover;'",
+              "opacity": "@OpacityImage2",
+              "-webkit-filter": "blur(@BlurImage2 * 1px) grayscale(@GrayImage2)",
+              "-moz-filter": "blur(@BlurImage2 * 1px) grayscale(@GrayImage2)",
+              "-o-filter": "blur(@BlurImage2 * 1px) grayscale(@GrayImage2)",
+              "-ms-filter": "blur(@BlurImage2 * 1px) grayscale(@GrayImage2)",
+              "filter": "blur(@BlurImage2 * 1px) grayscale(@GrayImage2)"
+            },
+            "div.imgtest2": {
+              "content": "url(@Test3)",
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "cover",
+              "font-family": "'object-fit: cover;'",
+              "opacity": "@OpacityImage3",
+              "-webkit-filter": "blur(@BlurImage3 * 1px) grayscale(@GrayImage3)",
+              "-moz-filter": "blur(@BlurImage3 * 1px) grayscale(@GrayImage3)",
+              "-o-filter": "blur(@BlurImage3 * 1px) grayscale(@GrayImage3)",
+              "-ms-filter": "blur(@BlurImage3 * 1px) grayscale(@GrayImage3)",
+              "filter": "blur(@BlurImage3 * 1px) grayscale(@GrayImage3)"
+            },
+            "div.imgtest3": {
+              "content": "url(@Test4)",
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "cover",
+              "font-family": "'object-fit: cover;'",
+              "opacity": "@OpacityImage4",
+              "-webkit-filter": "blur(@BlurImage4 * 1px) grayscale(@GrayImage4)",
+              "-moz-filter": "blur(@BlurImage4 * 1px) grayscale(@GrayImage4)",
+              "-o-filter": "blur(@BlurImage4 * 1px) grayscale(@GrayImage4)",
+              "-ms-filter": "blur(@BlurImage4 * 1px) grayscale(@GrayImage4)",
+              "filter": "blur(@BlurImage4 * 1px) grayscale(@GrayImage4)"
+            },
+            "div.imgtest4": {
+              "content": "url(@Test5)",
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "cover",
+              "font-family": "'object-fit: cover;'",
+              "opacity": "@OpacityImage5",
+              "-webkit-filter": "blur(@BlurImage5 * 1px) grayscale(@GrayImage5)",
+              "-moz-filter": "blur(@BlurImage5 * 1px) grayscale(@GrayImage5)",
+              "-o-filter": "blur(@BlurImage5 * 1px) grayscale(@GrayImage5)",
+              "-ms-filter": "blur(@BlurImage5 * 1px) grayscale(@GrayImage5)",
+              "filter": "blur(@BlurImage5 * 1px) grayscale(@GrayImage5)"
+            },
+            ".split .split-image.object-cover img, .slide-image.object-cover img .grid-image img, .video-wrap .poster img": {
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "cover",
+              "font-family": "'object-fit: cover;'"
+            },
+            ".slide-image.object-contain video, .slide-image.object-contain img": {
+              "width": "100% !important",
+              "height": "100% !important",
+              "object-fit": "contain",
+              "font-family": "'object-fit: contain;'"
+            },
+            ".home-hero .safari-fix a, .fullscreen a": {
+              "background": "none !important",
+              "text-shadow": "none !important"
+            },
+            ".wrap": {
+              "padding": "3rem",
+              "display": "block",
+              "width": "100%"
+            },
+            "@media only screen and (min-width: 700px)": {
+              ".wrap": {
+                "padding": "6rem"
+              },
+              "p + p": {
+                "margin-top": "2rem"
+              }
+            },
+            "@media only screen and (min-width: 1024px)": {
+              ".wrap": {
+                "padding": "6rem 6rem 5.4rem"
+              },
+              "section:last-child .wrap, .wrap:last-child": {
+                "padding-bottom": "6rem"
+              },
+              ".wrap.align-center q": {
+                "padding": "0 3rem"
+              }
+            },
+            "@media only screen and (min-width: 1400px)": {
+              ".wrap": {
+                "padding": "8.2rem 6rem 7.6rem"
+              },
+              "section:last-child .wrap, .wrap:last-child": {
+                "padding-bottom": "8.2rem"
+              }
+            },
+            "input, textarea, button, select, body": {
+              "font-family": "acumin-pro, Helvetica, Arial, sans-serif",
+              "font-style": "normal"
+            },
+            "h1": {
+              "font-weight": "600",
+              "font-size": "3rem",
+              "line-height": "1.16666667"
+            },
+            "body": {
+              "width": "100%",
+              "min-height": "100%",
+              "font-size": "2rem",
+              "line-height": "1.45",
+              "overflow-x": "hidden"
+            },
+            "@media only screen and (min-width: 700px) and (min-height: 500px)": {
+              "h1": {
+                "font-size": "calc(3.6rem + 1vw)"
+              }
+            },
+            "h1 + button": {
+              "margin-top": "2rem"
+            },
+            "h1 + p": {
+              "margin-top": "1rem"
+            },
+            "p + p": {
+              "margin-top": "1.6rem"
+            },
+            "img": {
+              "display": "block",
+              "max-width": "100%"
+            },
+            "img::after": {
+              "content": "\"🖼️\" attr(alt)",
+              "font-size": "1.4rem",
+              "display": "block",
+              "position": "absolute",
+              "z-index": "2",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "min-width": "4.5rem",
+              "height": "100%",
+              "padding": "1.5rem",
+              "background-color": "#fff",
+              "border": "1px solid #eeecec"
+            },
+            "@media all and (orientation: landscape)": {
+              "body:not(.touchscreen) header": {
+                "will-change": "auto",
+                "transition": "all 0.4s ease-in-out"
+              },
+              ".landscape-image ~ .portrait-image": {
+                "opacity": "0",
+                "display": "none"
+              }
+            },
+            ".wrap.text-wrap": {
+              "max-width": "82rem",
+              "margin-left": "auto",
+              "margin-right": "auto"
+            },
+            ".wrap.full-width": {
+              "padding-left": "0 !important",
+              "padding-right": "0 !important",
+              "max-width": "calc(100% - 6rem) !important"
+            },
+            ".wrap img": {
+              "width": "auto",
+              "height": "auto",
+              "max-width": "100%"
+            },
+            ".content > section:not(.hero):first-child": {
+              "padding-top": "5rem"
+            },
+            ".align-left": {
+              "text-align": "left"
+            },
+            ".align-center": {
+              "text-align": "center"
+            },
+            ".align-right": {
+              "text-align": "right"
+            },
+            ".text_block-section + .text-wrap, .flexible-section:not(.video-section) + .flexible-section:not(.video-section) > .wrap:first-child, .section-title-wrap + .flexible-section > .wrap:first-child, .body-copy-with-intro + .hidden-content > .flexible-section > .wrap:first-child, .wrap + .wrap": {
+              "padding-top": "0"
+            },
+            ".fullscreen": {
+              "position": "relative",
+              "height": "100vh",
+              "overflow": "hidden",
+              "-webkit-clip-path": "inset(0 0 0 0)",
+              "clip-path": "inset(0 0 0 0)"
+            },
+            ".fullscreen .wrap": {
+              "margin": "0",
+              "z-index": "4",
+              "padding-top": "0",
+              "padding-bottom": "0"
+            },
+            ".fullscreen .fixed-wrap": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "0"
+            },
+            ".fullscreen .fixed-wrap.fixed": {
+              "position": "fixed"
+            },
+            "@supports (-ms-ime-align: auto)": {
+              ".fullscreen": {
+                "clip-path": "none !important"
+              },
+              ".fullscreen .fixed-wrap.fixed": {
+                "position": "absolute !important"
+              }
+            },
+            "@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)": {
+              ".fullscreen": {
+                "clip-path": "none !important"
+              },
+              ".fullscreen .fixed-wrap.fixed": {
+                "position": "absolute !important"
+              }
+            },
+            ".fullscreen .slide-image": {
+              "width": "100%",
+              "height": "100%",
+              "position": "relative",
+              "z-index": "0"
+            },
+            ".fullscreen .slide-text": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "100%",
+              "display": "flex",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "z-index": "2"
+            },
+            ".fullscreen a": {
+              "color": "#ffffff"
+            },
+            ".slide-image + .slide-text, .slide-text.over-image": {
+              "color": "#fff",
+              "background": "radial-gradient(ellipse 50% 50%, rgba(18, 18, 18, 0.125), rgba(18, 18, 18, 0))"
+            },
+            ".hero .slide-image": {
+              "opacity": "0.8"
+            },
+            ".hero.auto-height": {
+              "padding": "5rem 0"
+            },
+            ".hero.auto-height .slide-text": {
+              "position": "relative"
+            },
+            ".home-hero": {
+              "position": "relative",
+              "z-index": "1"
+            },
+            ".home-hero + section": {
+              "z-index": "0"
+            },
+            ".home-hero + section + section": {
+              "z-index": "1"
+            },
+            ".home-hero .safari-fix": {
+              "position": "absolute",
+              "top": "0",
+              "background": "transparent !important",
+              "overflow": "hidden"
+            },
+            ".home-hero .safari-fix a": {
+              "display": "block",
+              "position": "relative",
+              "width": "100vw",
+              "height": "100%",
+              "background": "transparent !important",
+              "opacity": "0"
+            },
+            "body > .fullscreen": {
+              "position": "fixed",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "2"
+            },
+            "body > .fullscreen .slide-image": {
+              "opacity": "0.8"
+            },
+            "body > .fullscreen button, .project-hero .slide-text button": {
+              "background-color": "#fff",
+              "color": "#121212",
+              "border-color": "#fff",
+              "opacity": "0"
+            },
+            ".page-hero .slide-image": {
+              "position": "fixed"
+            },
+            ".page-hero .slide-text": {
+              "position": "relative",
+              "height": "auto",
+              "margin": "100vh auto 25vh",
+              "background": "transparent"
+            },
+            "@media all and (orientation: portrait)": {
+              ".page-hero .wrap h4": {
+                "font-size": "calc(2rem + 0.25vh)"
+              },
+              ".portrait-image ~ .landscape-image": {
+                "opacity": "0",
+                "visibility": "hidden",
+                "display": "none"
+              }
+            },
+            ".fullscreen .slide-text button:only-child": {
+              "margin-top": "2rem"
+            },
+            ".offblack-bg": {
+              "background-color": "#231f20"
+            },
+            ".offblack-bg a:not(.button):not([title]):not(:hover)": {
+              "background": "linear-gradient(#231f20 calc(100% - 1px), #ffffff calc(100% - 1px))",
+              "text-shadow": "0 1px #231f20, -1px 0 #231f20, 1px 0 #231f20, -2px 0 #231f20, 2px 0 #231f20"
+            },
+            ".hidden": {
+              "display": "none",
+              "visibility": "hidden"
+            },
+            "H1": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Zen2cool Parallax\" class=\"hero home-hero offblack-bg white-text\" id=\"home-hero\" plugins=\"Zen2cool-Parallax\">\n\n    <mbr-parameters>\n\n        <header>Parallax v0.9</header>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Dots (Work on prev/pub)</header>\n        <input type=\"checkbox\" title=\"On/Off\" name=\"showDots\" checked>\n        <input type=\"checkbox\" title=\"Right/Left\" name=\"showPossDots\" condition=\"showDots\">\n        <input type=\"range\" name=\"DotsSpacing\" title=\"Spacing\" min=\"1\" max=\"100\" step=\"1\" value=\"1\" condition=\"showDots\">\n        <input type=\"range\" name=\"DotsSize\" title=\"Dots Size\" min=\"1\" max=\"20\" step=\"1\" value=\"15\" condition=\"showDots\">\n        <input type=\"range\" name=\"DotsActSize\" title=\"Dots Act Size\" min=\"1\" max=\"2\" step=\"0.1\" value=\"1.7\" condition=\"showDots\">\n        <input type=\"color\" title=\"Dots Color\" name=\"IndicColor\" value=\"#ffffff\" condition=\"showDots\"> \n        <input type=\"color\" title=\"Dots Act Color\" name=\"IndicColorAct\" value=\"#e43f3f\" condition=\"showDots\"> \n        <input type=\"range\" name=\"DotsRadius\" title=\"Radius\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"showDots\">\n        <header>Blocs</header>\n        <input type=\"range\" name=\"NbrofBar\" title=\"Nbr. of Block\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n        <header>Block 1</header>\n        <input type=\"image\" inline title=\"Image\" name=\"Test1\" value=\"https://www.unsitepourtous.be/mobi/flower1.jpg\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"OpacityImage1\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\">\n        <input type=\"range\" inline title=\"Blur\" name=\"BlurImage1\" min=\"0\" max=\"20\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Color\" name=\"GrayImage1\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Button\" name=\"showButton1\" checked>\n        <header condition=\"NbrofBar > 1\">Block 2</header>\n        <input type=\"image\" inline title=\"Image\" name=\"Test2\" value=\"https://www.unsitepourtous.be/mobi/flower2.jpg\" selected condition=\"NbrofBar > 1\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"OpacityImage2\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"NbrofBar > 1\">\n        <input type=\"range\" inline title=\"Blur\" name=\"BlurImage2\" min=\"0\" max=\"100\" step=\"1\" value=\"0\" condition=\"NbrofBar > 1\">\n        <input type=\"range\" inline title=\"Color\" name=\"GrayImage2\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"NbrofBar > 1\"> \n        <input type=\"checkbox\" title=\"Button\" name=\"showButton2\" checked condition=\"NbrofBar > 1\">\n        <header condition=\"NbrofBar > 2\">Block 3</header>\n        <input type=\"image\" inline title=\"Image\" name=\"Test3\" value=\"https://www.unsitepourtous.be/mobi/flower3.jpg\" selected condition=\"NbrofBar > 2\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"OpacityImage3\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"NbrofBar > 2\">\n        <input type=\"range\" inline title=\"Blur\" name=\"BlurImage3\" min=\"0\" max=\"20\" step=\"1\" value=\"0\" condition=\"NbrofBar > 2\"> \n        <input type=\"range\" inline title=\"Color\" name=\"GrayImage3\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"NbrofBar > 2\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton3\" checked condition=\"NbrofBar > 2\">\n        <header condition=\"NbrofBar > 3\">Block 4</header>\n    \n        <input type=\"image\" inline title=\"Image\" name=\"Test4\" value=\"https://www.unsitepourtous.be/mobi/flower4.jpg\" selected condition=\"NbrofBar > 3\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"OpacityImage4\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"NbrofBar > 3\">\n        <input type=\"range\" inline title=\"Blur\" name=\"BlurImage4\" min=\"0\" max=\"20\" step=\"1\" value=\"0\" condition=\"NbrofBar > 3\">\n        <input type=\"range\" inline title=\"Color\" name=\"GrayImage4\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"NbrofBar > 3\"> \n        <input type=\"checkbox\" title=\"Button\" name=\"showButton4\" checked condition=\"NbrofBar > 3\">\n        <header condition=\"NbrofBar > 4\">Block 5</header>\n        <input type=\"image\" inline title=\"Image\" name=\"Test5\" value=\"https://www.unsitepourtous.be/mobi/flower5.jpg\" selected condition=\"NbrofBar > 4\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"OpacityImage5\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"NbrofBar > 4\">\n        <input type=\"range\" inline title=\"Blur\" name=\"BlurImage5\" min=\"0\" max=\"20\" step=\"1\" value=\"0\" condition=\"NbrofBar > 4\">\n        <input type=\"range\" inline title=\"Color\" name=\"GrayImage5\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"NbrofBar > 4\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton5\" checked condition=\"NbrofBar > 4\">\n    \n    </mbr-parameters>\n   <main mbr-if=\"showDots\">\n        <aside>\n    <ul>\n      <li>\n        <a class=\"indicator active\" href=\"#first\"></a>\n      </li>\n      <li mbr-if=\"NbrofBar > 1\">\n        <a class=\"indicator\" href=\"#second\"></a>\n      </li>\n      <li mbr-if=\"NbrofBar > 2\">\n        <a class=\"indicator\" href=\"#third\"></a>\n      </li>\n            <li mbr-if=\"NbrofBar > 3\">\n        <a class=\"indicator\" href=\"#four\"></a>\n      </li>\n            <li mbr-if=\"NbrofBar > 4\">\n        <a class=\"indicator\" href=\"#five\"></a>\n      </li>\n        <li>\n        <a class=\"indicator d-none\" href=\"#third\"></a>\n      </li>\n        <li>\n        <a class=\"indicator d-none\" href=\"#four\"></a>\n      </li>\n         <li>\n        <a class=\"indicator d-none\" href=\"#five\"></a>\n      </li>\n    </ul>\n  </aside>\n  </main>\n  \n  \n  <sectionzen id=\"first\">\n    \t\t<div class=\"fullscreen\">\n            <div class=\"fixed-wrap fixed\">\n\t\t\t\t<div class=\"slide-image object-cover\">\n                <div class=\"imgtest landscape-image\" alt data-sizes=\"auto\"></div></div>\n\t\t\t\t<div class=\"slide-text over-image\">\n\t\t\t\t\t<div class=\"wrap text-wrp align-center\">\n\t\t\t\t\t\t<h3 class=\"widont balance-text mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>Parallax Hello World 1</b></h3>\n\t\t\t\t\t                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                   Subtitle 1</h4>\n                 <div class=\"mbr-section-btn align-center\" mbr-if=\"showButton1\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href data-app-placeholder=\"Type Text\">Learn more</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n        </div>\n    </sectionzen>\n    <sectionzen id=\"second\">\n\t\t    \t\t<div class=\"fullscreen\" mbr-if=\"NbrofBar > 1\">\n              <div class=\"fixed-wrap fixed\">\n\t\t\t\t<div class=\"slide-image object-cover\">\n               <div class=\"imgtest1 landscape-image\" alt data-sizes=\"auto\"></div></div>\n\t\t\t\t\t\t\t<div class=\"slide-text over-image\">\n\t\t\t\t\t<div class=\"wrap text-wrp align-center\">\n\t\t\t\t\t\t<h3 class=\"widont balance-text mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>Parallax Hello World 2</b></h3>\t\t\t\t\t\t                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                   Subtitle 2</h4>\n                    <div class=\"mbr-section-btn align-center\" mbr-if=\"showButton2\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href data-app-placeholder=\"Type Text\">Learn more</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t  </div>\n        </div>\n  </sectionzen>\n  <sectionzen id=\"third\">\n\t\t    \t\t<div class=\"fullscreen\" mbr-if=\"NbrofBar > 2\">\n              <div class=\"fixed-wrap fixed\">\n\t\t\t\t<div class=\"slide-image object-cover\">\n <div class=\"imgtest2 landscape-image\" alt data-sizes=\"auto\"></div></div>\n\t\t\t\t<div class=\"slide-text over-image\">\n\t\t\t\t\t<div class=\"wrap text-wrp align-center\">\n<h3 class=\"widont balance-text mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>Parallax Hello World 3</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                   Subtitle 3</h4>\n                    <div class=\"mbr-section-btn align-center\" mbr-if=\"showButton3\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href data-app-placeholder=\"Type Text\">Learn more</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t  </div>\n        </div>\n  </sectionzen>\n  <sectionzen id=\"four\">\n\t\t      \t<div class=\"fullscreen\" mbr-if=\"NbrofBar > 3\">\n             <div class=\"fixed-wrap fixed\">\n\t\t\t\t<div class=\"slide-image object-cover\">\n <div class=\"imgtest3 landscape-image\" alt data-sizes=\"auto\"></div></div>\n\t\t\t\t<div class=\"slide-text over-image\">\n\t\t\t\t\t<div class=\"wrap text-wrp align-center\">\n\t\t\t\t\t\t<h3 class=\"widont balance-text mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>Parallax Hello World 4</b></h3>\n\t\t\t\t\t\t\t\t\t\t                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                   Subtitle 4</h4>\n                    <div class=\"mbr-section-btn align-center\" mbr-if=\"showButton4\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href data-app-placeholder=\"Type Text\">Learn more</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t  </div>\n        </div>\n  </sectionzen>\n  <sectionzen id=\"five\">\n\t\t<div class=\"fullscreen\" mbr-if=\"NbrofBar > 4\">\n            <div class=\"fixed-wrap fixed\">\n\t\t\t\t<div class=\"slide-image object-cover\">\n                <div class=\"imgtest4 landscape-image\" alt data-sizes=\"auto\"></div></div>\n\t\t\t\t<div class=\"slide-text over-image\">\n\t\t\t\t\t<div class=\"wrap text-wrp align-center\">\n\t\t\t\t\t<h3 class=\"widont balance-text mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>Parallax Hello World 5</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\">\n                   Subtitle 5</h4>\n                    <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-if=\"showButton5\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href data-app-placeholder=\"Type Text\">Learn more</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n        </div>\n  </sectionzen>\n  \n    <script>\n   const indicators = document.querySelectorAll(\".indicator\");\nconst sections = document.querySelectorAll(\"sectionzen\");\n\nconst resetCurrentActiveIndicator = () => {\n  const activeIndicator = document.querySelector(\".active\");\n  activeIndicator.classList.remove(\"active\");\n};\n\nconst onSectionLeavesViewport = (sectionzen) => {\n  const observer = new IntersectionObserver(\n    (entries) => {\n      entries.forEach((entry) => {\n        if (entry.isIntersecting) {\n          resetCurrentActiveIndicator();\n          const element = entry.target;\n          const indicator = document.querySelector(`a[href='#${element.id}']`);\n          indicator.classList.add(\"active\");\n          return;\n        }\n      });\n    },\n    {\n      root: null,\n      rootMargin: \"0px\",\n      threshold: 0.75\n    }\n  );\n  observer.observe(sectionzen);\n};\n\nindicators.forEach((indicator) => {\n  indicator.addEventListener(\"click\", function (event) {\n    event.preventDefault();\n    document\n      .querySelector(this.getAttribute(\"href\"))\n      .scrollIntoView({ behavior: \"smooth\" });\n    resetCurrentActiveIndicator();\n    this.classList.add(\"active\");\n  });\n});\n\nsections.forEach(onSectionLeavesViewport);\n    </script>\n\t\t\n\n                <div class=\"safari-fix\" id=\"safari-fix\"></div>\n\n\t\n\t</section>",
+          "_cid": "XDfy17CFIf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "design-block-XDfy17CFIf"
         }
       ]
     },
